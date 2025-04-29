@@ -105,6 +105,26 @@ console.log(games.slice(1,3)); //ending index is not included
 console.log(games);
 games.splice(1,2,"Delta force","Warzone");
 console.log(games);
+games.splice(1,0,"Genshin","Star rail");
+console.log(games);
+
+// question
+
+// create an array to store names -> "Tifa lockheart","Ada wong","Raiden shougun","Yelan","Shenhe"
+// remove the first element of the array 
+// remove ada wong and acheron
+// add ellie at the end 
+
+let names = ["Tifa lockheart","Ada wong","Raiden shougun","Yelan","Shenhe"];
+
+console.log(names.shift());
+console.log(names);
+names.splice(0,1,"acheron");
+console.log(names);
+names.push("ellie");
+console.log(names);
+
+
 
 
 
