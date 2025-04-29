@@ -48,3 +48,17 @@ console.log("the sum : ",sum);
 console.log("The averag//e marks of student is : ", avg);
 
 
+// for a given array with a prices of 5 items
+//  [250,645,300,900,50]
+// all the items have an offer of 10% OFF on them. change the array to store final price after applying offer.
+
+let price = [250,645,300,900,50];
+console.log(price);
+
+for(let i = 0; i < price.length; i++){
+    let temp = price[i]*0.10;
+    price[i] = temp;
+}
+
+console.log(`price : ${price}`)
+
