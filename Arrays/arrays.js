@@ -1,6 +1,8 @@
 //xreate array 
 
-let heroes = ["Ironman","hulk","spiderman"];
+let heroes = ["Ironman","hulk","spiderman","Ant man"];
+
+let games = ["Elden ring","Wukong","Ghost of Tsusima","Dark soul"];
 
 let marks = [87 , 99 , 88 , 77 , 22];
 
@@ -18,3 +20,31 @@ console.log('1.' + heroes[0]);
 
 heroes[0] = "Wonder women";
 console.log(heroes);
+
+
+for(let i=0;i<heroes.length;i++){
+    console.log(heroes[i]);
+}
+console.log(" ");
+
+for(let el of games){
+    console.log(el.toUpperCase());
+}
+
+
+// for a given array with marks of student ->
+// [85,97,44,37,60]
+// find the average marks of the entire class
+
+let marksOfStudent = [85,97,44,37,60];
+let sum=0;
+for(let i = 0 ; i < marksOfStudent.length; i++){
+    sum = sum + marksOfStudent[i];
+
+}
+
+let avg = sum/marksOfStudent.length;
+console.log("the sum : ",sum);
+console.log("The averag//e marks of student is : ", avg);
+
+
