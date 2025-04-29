@@ -57,8 +57,55 @@ console.log(price);
 
 for(let i = 0; i < price.length; i++){
     let temp = price[i]*0.10;
-    price[i] = temp;
+    price[i] -= temp;
 }
 
-console.log(`price : ${price}`)
+console.log(price);
+
+
+//arrays Method 
+
+// Push(): add to end 
+// pop() : delete from end and return
+// toString() : convert array to string
+// concat(): join multipal arrays and return result 
+// unshift() :  add to start 
+
+let things = ['potato','tomato','carrot','apple','banana','amelia'];
+things.push('mango');
+
+console.log(things);
+console.log(things.pop());
+console.log(things);
+
+
+
+console.log(things.toString());
+
+// concat
+
+let girly = ["Vivi","Nami","Robin","Boa hacocku"];
+let boys = ['luffy','Sanji',"Zoro","Brook"];
+
+console.log(girly.concat(boys));
+
+
+// unshift  and shift 
+
+games.unshift("Valorant");
+console.log(games);
+
+games.shift();
+console.log(games);
+
+
+// slice and splice 
+
+console.log(games.slice(1,3)); //ending index is not included 
+console.log(games);
+games.splice(1,2,"Delta force","Warzone");
+console.log(games);
+
+
+
 
