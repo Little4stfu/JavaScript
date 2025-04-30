@@ -184,3 +184,54 @@ let newNum = num.filter((val)=>{
 })
 console.log(newNum);
 
+
+
+// reduce method
+// Performs some operations and reduces the array to a single values. It return that single value 
+
+const output = num.reduce((res,curr)=>{
+    return res > curr ? res : curr;
+})
+
+console.log(output)
+
+
+
+
+const mark = [88,99,60,96,70];
+
+const topClass = mark.filter((val)=>{
+    return val > 90;
+})
+
+console.log(topClass);
+
+
+
+// take a number n as input from user, Create an array of numbers from 1 to n 
+// Use the reduce method to calculate sum of all numbers in array.
+// use the reduce method to calculate a product of all nubers in array 
+
+
+
+const n = 10;
+
+let a=[];
+let i;
+for(i = 0 ;i  < n; i++){
+    a[i] = i+1;
+}
+console.log(a);
+
+let sumOfarray = a.reduce((res,curr)=>{
+    return res + curr;
+})
+
+console.log(sumOfarray);
+
+let mulOfarray = a.reduce((res,curr)=>{
+    return res * curr;
+})
+
+console.log(mulOfarray);
+
