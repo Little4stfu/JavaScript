@@ -115,3 +115,72 @@ const checkVowel = (a)=>{
 }
 
 console.log(checkVowel('amelia'));
+
+
+
+let souls = "Eldenring".toUpperCase();
+
+console.log(souls);
+
+
+// foreach function
+
+let arr = [1,2,3,4,5];
+
+arr.forEach(function myArray(val){
+    console.log(val)
+})
+
+let cities = ["Warsaw","Plock","Tokyo"]
+cities.forEach((val,idx,cities)=>{
+    console.log(val.toUpperCase(),idx,cities);
+})
+
+
+
+// higher order method or function
+// they take other funciton as a paramenter or it return function as value 
+
+
+
+console.log("square ,Index, Array");
+let toSquare = [1,2,3,4,5,6];
+
+toSquare.forEach((val,idx,toSquare)=>{
+    console.log(val * 2,idx,toSquare);
+})
+
+
+// Array method 
+
+// map method
+// map create a new array with the result of some operation the value its callback return are used to from a new array
+
+
+let numbers = [4,5,6,7,8,4]
+
+numbers.map((val)=>{
+    console.log(val)
+})
+
+console.log(" ");
+
+
+
+let newArray = numbers.map((val)=>{
+    console.log(val)
+})
+
+console.log(newArray);
+
+
+
+// filter method 
+
+let num  = [,4,5,6,7,9,2,3,];
+
+let newNum = num.filter((val)=>{
+    return val %2 != 0;
+})
+console.log(newNum);
+
