@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- wap to validate the form at client side where student rollno, gender & mail field are not accepted blank -->
+    <div id="error"></div>
+
+    <form id="form" action="/" method="get">
+        <div>
+            <label for="rollno">Roll_no</label>
+            <input id="roll_no" name="roll_no" type="number">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+                <option value="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div>
+            <label for="Email">Email</label>
+            <input id="email" name="email" type="email">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+<script src="index.js">
+        
+</script>
+</html>
