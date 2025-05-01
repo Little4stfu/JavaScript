@@ -12,7 +12,7 @@ window.console.log("hello");
 
 
 
-// DOM
+// DOM -> document object model 
 // When a web page is loaded, the browser creates a document object model of the page
 
 // console.log -> this only print 
@@ -21,3 +21,15 @@ window.console.log("hello");
 console.dir(window);
 console.log(window.document.body);
 
+document.body.style.background ="blue";
+
+// DOM manipulation
+
+// access element by id
+// document.getElementById('myId')
+
+// access element by className
+// document.getElementByClassName("myClass")
+
+// access element by tag
+// document.getElementByTagName("myTag");
