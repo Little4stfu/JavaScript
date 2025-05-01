@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myButton">Click Me!</button>
+    <p id="message"></p>
+    <script>
+        function showMessage(){
+            document.getElementById('message').innerText = "Button was clicked";
+        }
+
+        const button = document.getElementById('myButton');
+        button.addEventListener('click',showMessage);
+    </script>
+</body>
+</html>
