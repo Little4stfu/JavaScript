@@ -22,3 +22,17 @@ div.innerText = "Hello";
 let newBtn = document.createElement("button");
 
 console.log(newBtn);
+newBtn.innerHTML = "Click me!";
+
+div.append(newBtn);
+
+let h1 = document.createElement("h1");
+h1.innerText = "This is h1";
+
+let body = document.querySelector("body");
+
+body.prepend(h1);
+
+
+
+div.remove();
