@@ -17,3 +17,18 @@ button.addEventListener('click',showMessage);
 
 
 
+// event object 
+// it is a sspecial object that has details about the event.
+
+
+let div2 = document.querySelector(".click");
+
+div2.onclick = (e) =>{
+    console.log(e);
+    console.log(event.type);
+    console.log(event.target);
+    console.log(event.clientX , event.clientY);
+}
+
+
+// EventListerners
