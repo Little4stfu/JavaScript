@@ -64,3 +64,14 @@ img{
     border-radius: 1rem;
 }
 
+
+.button-reset{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    display:inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}

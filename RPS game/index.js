@@ -1,6 +1,8 @@
 let userScore = 0;
 let compScore = 0;
 
+let reset = document.querySelector(".button-reset");
+
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
 const userScorePara = document.querySelector("#user-score");
@@ -65,4 +67,6 @@ choices.forEach((choice)=>{
         playGame(userChoice);
     })
 })
+
+
 
